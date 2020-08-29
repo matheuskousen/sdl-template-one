@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Ul = styled.ul`
-  background: #f5f5f5;
+  background: #212121;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 `;

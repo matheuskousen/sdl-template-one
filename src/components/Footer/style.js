@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
   width: 100%;
-
+  font-family: "Marcellus", serif;
   .content {
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 5rem 0;
+    padding-top: 3cm;
 
     .row {
       display: grid;
@@ -34,7 +34,12 @@ export const Container = styled.footer`
           justify-content: flex-start;
         }
         img {
-          max-width: 5rem;
+          max-width: 4rem;
+        }
+
+        h3 {
+          font-family: "Marcellus", serif;
+          margin-top: 0.5cm;
         }
       }
       .col-2 {

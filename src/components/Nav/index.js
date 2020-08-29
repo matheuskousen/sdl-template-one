@@ -22,7 +22,7 @@ function Nav(props) {
           <Links
             isMovingtoRight={isOpen}
             isOpacity={isOpen}
-            delay={i * 800}
+            delay={i * 1000}
             key={option.id}
             to={option.targetPage}
             title={option.optionName}

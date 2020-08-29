@@ -68,12 +68,12 @@ export const ListLinks = styled.ul`
     color: white;
     flex-direction: column;
     justify-content: space-evenly;
-
+    transition: 0.5s all ease 0s;
     ${(props) =>
       props.isOpen &&
       css`
         width: 100%;
-        transition: 1s all ease 0s;
+        transition: 0.5s all ease 0s;
       `}
   }
   display: flex;
@@ -82,16 +82,16 @@ export const ListLinks = styled.ul`
 
 export const Li = styled.li`
   @media (max-width: 768px) {
-    text-align: end;
+    text-align: right;
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: flex-end;
     padding-right: ${({ isMovingtoRight }) =>
-      isMovingtoRight ? "1em" : "150rem"};
+      isMovingtoRight ? "1em" : "100rem"};
     align-items: center;
     opacity: ${({ isOpacity }) => (isOpacity ? 1 : 0)};
-    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    transition: all 2s ease 0s;
     transition-delay: ${({ delay }) => `${delay}ms`};
 
     a {

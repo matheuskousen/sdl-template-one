@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Article = styled.article`
   width: 100%;
-  background: #fafafa;
+  background: #212121;
   color: #424242;
 
   @media (min-width: 768px) {
@@ -35,9 +35,13 @@ export const Article = styled.article`
       }
       .col-post-content {
         h2 {
+          color: #9e9e9e !important;
+          line-height: 1.2 !important;
           @media (max-width: 768px) {
             text-align: center;
             margin-top: 1rem;
+            padding: 1cm 1rem;
+            line-height: 1.4;
           }
 
           text-align: start;
@@ -70,7 +74,7 @@ export const Article = styled.article`
 
   .why {
     margin-top: 0rem;
-    padding-top: 0rem;
+    padding-top: 1cm;
 
     width: 100%;
     .row__why {
@@ -127,7 +131,7 @@ export const Article = styled.article`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: #e0e0e0;
+        background: #0c0c0c;
         padding: 2rem 0;
         @media (max-width: 768px) {
           margin-top: 2rem;

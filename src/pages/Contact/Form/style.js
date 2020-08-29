@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  max-width: 60rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 3em;
-  border-top: 1px solid #212121;
+  padding: 1.5cm 0;
+  @media (max-width: 900px) {
+    padding: 0cm;
+    border: none;
+  }
+
   h1 {
     text-align: center;
     color: #212121;
@@ -17,10 +18,13 @@ export const Container = styled.section`
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 0.5em;
-    border: 1px solid #212121;
+    border: 1px solid transparent;
     display: flex;
     flex-direction: column;
 
+    label {
+      width: 100%;
+    }
     input,
     button,
     textarea {
@@ -29,12 +33,14 @@ export const Container = styled.section`
 
     input,
     textarea {
-      background: #bbdefb;
+      background: #efefef;
       border: none;
+      border: 1px solid black;
+      width: 100%;
       color: #eeeeee;
       transition: 0.2s;
-      padding: 1rem;
-      color: #212121;
+      padding: 0.8rem;
+      color: #2c2c2c;
 
       &::placeholder {
         color: #212121;
@@ -56,7 +62,7 @@ export const Container = styled.section`
     }
     button {
       margin-top: 1rem;
-      background: #2979ff;
+      background: #2c2c2c;
       border: none;
       color: #f5f5f5;
       padding: 0.5rem 0.75rem;

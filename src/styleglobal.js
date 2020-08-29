@@ -13,6 +13,10 @@ ol[class] {
     padding: 0
 }
 
+
+.sondline{
+    font-family: 'Marcellus', serif;
+}
 body,
 h1,
 h2,
@@ -41,10 +45,10 @@ body {
     background:#212121;
     color:#F5F5F5;
     line-height: 1.6;
-    font-family:  'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:   'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 h1,h2,h3,h4{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Marcellus', serif;
 }
 h1 {
     font-size: 61px;
@@ -142,12 +146,5 @@ img:not([alt]) {
     filter: blur(10px)
 }
 
-@media(prefers-reduced-motion:reduce) {
-    * {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: .01ms !important;
-        scroll-behavior: auto !important
-    }
-}
+
 `;

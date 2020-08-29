@@ -1,15 +1,33 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Container } from "./style";
-import Button from "@material-ui/core/Button";
+import { TweenMax } from "gsap/dist/gsap";
 
 export default function Hero(props) {
+  const onloadEffect = useRef(null);
+  const classContainer = useRef(null);
+  console.log(".banner-wrapper-row");
+  useEffect(() => {
+    let roleStyle = "role";
+    classContainer.current.classList.add(`${roleStyle}`);
+    console.log(classContainer.current);
+
+    TweenMax.from(onloadEffect.current, 1, {
+      duration: 1,
+      text: "",
+      scrub: 1,
+      opacity: 0,
+      y: 200,
+    });
+  });
+
   return (
-    <Container ref={props.get}>
+    <Container ref={classContainer}>
       <section className="banner-wrapper-row">
         <div className="left">
-          <h1>
-            A Soundline e uma empresa criativa que trabalha no entretenimento
-            atravez, da iluminações, som, estruturas e muito mais.
+          <h1 ref={onloadEffect}>
+            A <span className="soundline">Sound Line</span> e uma empresa
+            criativa que trabalha no entretenimento atravez, da iluminações,
+            som, estruturas e muito mais.
           </h1>
         </div>
         <div className="line"></div>
@@ -22,11 +40,6 @@ export default function Hero(props) {
             <div className="card-body ">
               <h2>Vinicius Camargos </h2>
               <p>Chefe Executivo Oficial de Soundline</p>
-              <a href="/" className="btn">
-                <Button variant="contained" color="default">
-                  Leia mais
-                </Button>
-              </a>
             </div>
           </div>
         </div>

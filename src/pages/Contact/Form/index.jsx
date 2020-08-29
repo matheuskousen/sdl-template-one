@@ -1,23 +1,30 @@
-import React from "react"
-import {Container } from "./style"
-export default props => {
+import React from "react";
+import { Container } from "./style";
+export default (props) => {
+  return (
+    <Container>
+      <form action="https://formspree.io/xjvaqydy" method="POST">
+        <label>
+          <input type="text" name="_replyto" placeholder="E-mail" />
+        </label>
 
+        <label>
+          <input type="text" name="name" placeholder="Nome" />
+        </label>
 
-    return <Container>
-             <h1>Faça seu orçamento </h1>
-        <form>
-            <input type="text" placeholder="Nome"/>
-            <input type="text" placeholder="Email"/>
-            <input type="text" placeholder="Telefone" />
-            <input type="text" placeholder="Cidade" />
-            <textarea placeholder="Deixe uma mensagem"></textarea>
-            
-            <button>Enviar</button>
-        </form>
+        <label>
+          <input type="text" name="city" placeholder="cidade" />
+        </label>
+
+        <label>
+          <input type="text" name="contact" placeholder="Telefone" />
+        </label>
+        <label>
+          <textarea name="message" placeholder="Mensagem"></textarea>
+        </label>
+
+        <button type="submit">Enviar</button>
+      </form>
     </Container>
-
-
-
-
-}
-
+  );
+};
