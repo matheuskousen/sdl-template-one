@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 
 export default function Routes() {
   return (
-    <BrowserRouter basename="/soundline">
+    <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/sobre" exact component={About} />
